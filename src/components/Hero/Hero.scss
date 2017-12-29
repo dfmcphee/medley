@@ -1,0 +1,25 @@
+.Hero {
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 1rem;
+  color: $color-white;
+}
+
+.Container {
+  max-width: $default-max-width;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Content {
+  flex: 0 1 30rem;
+}
+
+.Title {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.Description {
+  font-size: 1.2rem;
+}

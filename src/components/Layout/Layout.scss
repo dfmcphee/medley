@@ -1,0 +1,11 @@
+.Layout {
+  display: block;
+  max-width: $default-max-width;
+  margin: 2rem auto;
+}
+
+.Items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}

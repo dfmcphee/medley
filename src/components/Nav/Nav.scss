@@ -1,0 +1,32 @@
+.Nav {
+  display: flex;
+  max-width: $default-max-width;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Branding {
+  max-width: 10rem;
+  padding: 1rem;
+}
+
+.Items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Link {
+  display: block;
+  text-decoration: none;
+  padding: 2rem 1rem;
+  color: $color-primary;
+}
