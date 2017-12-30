@@ -8,7 +8,7 @@ export interface Props {
   onChange?(value: string, id: string): void;
 }
 
-class Card extends React.Component<Props, {}> {
+class TextField extends React.Component<Props, {}> {
   constructor(props: Props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
@@ -33,4 +33,4 @@ class Card extends React.Component<Props, {}> {
   }
 }
 
-export default Card;
+export default TextField;

@@ -20,7 +20,7 @@ export class Card extends React.Component<Props, {}> {
   render() {
     const {title, children, image, fullBleed} = this.props;
     const imageClassnames = classnames(
-      styles.imageWrapper, {
+      styles.ImageWrapper, {
         [styles.fullBleed]: fullBleed,
       }
     );

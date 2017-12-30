@@ -1,10 +1,12 @@
 import * as React from 'react';
 import * as styles from './App.scss';
 
-import Card from './components/Card';
-import Hero from './components/Hero';
-import Layout from './components/Layout';
-import Nav from './components/Nav';
+import {
+  Card,
+  Hero,
+  Layout,
+  Nav,
+} from './components';
 
 const logo = require('./images/logo.svg');
 const image1 = require('./images/tabs.svg');
