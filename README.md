@@ -1,8 +1,8 @@
-# Medley
+# React Design System
 
-Medley is a collection of React components to help you build interfaces quicker and easier.
+React Design System is a collection of React components to help you build web interfaces quicker and easier.
 
-## Getting started
+## Development
 
 In the project directory, you can run:
 

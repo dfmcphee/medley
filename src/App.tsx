@@ -6,17 +6,18 @@ import Hero from './components/Hero';
 import Layout from './components/Layout';
 import Nav from './components/Nav';
 
-const natalieImage = require('./images/natalie.jpg');
-const elliotImage = require('./images/elliot.jpg');
-const dominicImage = require('./images/dominic.jpg');
-const heroImage = require('./images/hero.jpg');
+const logo = require('./images/logo.svg');
+const image1 = require('./images/tabs.svg');
+const image2 = require('./images/images.svg');
+const image3 = require('./images/account.svg');
+const heroImage = require('./images/gradient.svg');
 
 class App extends React.Component {
   render() {
     return (
       <div className={styles.App}>
         <Nav
-          branding={<p>Test</p>}
+          branding={<img src={logo} alt="React Design System Logo" style={{width: '10rem'}} />}
           items={[
             {url: '#', content: 'Hello'},
             {url: '#', content: 'About us'},
@@ -25,20 +26,20 @@ class App extends React.Component {
           ]}
         />
         <Hero
-          title="The Ultimate Design Framework"
-          description="Morbi sed vulputate turpis. Nullam porta, nunc quis faucibus efficitur, erat tortor consectetur urna, id pharetra lacus massa quis sem."
+          title="React Design System"
+          description="A collection of React components to help you build interfaces quicker and easier."
           background={heroImage}
         />
         <Layout>
-          <Card title="Elliot" image={elliotImage}>
+          <Card title="Dissentias" image={image1}>
             <p>Usu soleat facete dissentias ne. Nec no hinc case, aperiri discere ea qui.</p>
             <p>Vix eros habeo sadipscing ad, soluta iisque eam in, tale inani mei cu.</p>
           </Card>
-          <Card title="Dominic" image={dominicImage}>
+          <Card title="Qui inermis senserit" image={image2}>
             <p>Vix eros habeo sadipscing ad, soluta iisque eam in, tale inani mei cu.</p>
             <p>Veri probatus contentiones qui ea. An qui inermis senserit, albucius molestiae euripidis ut sed.</p>
           </Card>
-          <Card title="Natalie" image={natalieImage}>
+          <Card title="Nec no hinc" image={image3}>
             <p>Lorem ipsum dolor sit amet, ea suscipit consulatu sea, adipiscing suscipiantur eos ei.</p>
             <p>Usu soleat facete dissentias ne. Nec no hinc case, aperiri discere ea qui.</p>
           </Card>
