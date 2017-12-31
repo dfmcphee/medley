@@ -1,6 +1,7 @@
 {
   "name": "react-desgin-system",
   "version": "0.1.0",
+  "license": "MIT",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
