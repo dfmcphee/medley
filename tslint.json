@@ -19,16 +19,11 @@
         "indent": [ true, "spaces" ],
         "interface-name": [true, "never-prefix"],
         "jsdoc-format": true,
+        "jsx-boolean-value": false,
         "jsx-no-lambda": false,
         "jsx-no-multiline-js": false,
         "label-position": true,
         "max-line-length": false,
-        "member-ordering": [
-            true,
-            "public-before-private",
-            "static-before-instance",
-            "variables-before-functions"
-        ],
         "no-any": false,
         "no-arg": true,
         "no-bitwise": true,

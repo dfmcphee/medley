@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './Heading.scss';
+import * as styles from './Heading.css';
 
 export interface Props {
   children: React.ReactNode;

@@ -1,6 +1,6 @@
 .Nav {
   display: flex;
-  max-width: $default-max-width;
+  max-width: var(--default-max-width);
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -29,5 +29,5 @@
   display: block;
   text-decoration: none;
   padding: 2rem 1rem;
-  color: $color-primary;
+  color: var(--color-primary);
 }

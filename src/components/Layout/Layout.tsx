@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './Layout.scss';
+import * as styles from './Layout.css';
 
 export interface Props {
   title?: string;

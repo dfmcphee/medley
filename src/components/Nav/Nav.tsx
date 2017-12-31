@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './Nav.scss';
+import * as styles from './Nav.css';
 
 export interface Item {
   url: string;

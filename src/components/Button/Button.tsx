@@ -1,7 +1,10 @@
 import * as React from 'react';
-import * as styles from './Button.scss';
+import * as classnames from 'classnames';
+
+import * as styles from './Button.css';
 
 export interface Props {
+  primary?: boolean;
   onClick?(target: EventTarget): void;
 }
 
@@ -12,10 +15,14 @@ class Button extends React.Component<Props, {}> {
   }
 
   render() {
-    const {children} = this.props;
+    const {children, primary} = this.props;
+
+    const className = classnames(styles.Button, {
+      [styles.primary]: primary,
+    });
 
     return (
-      <button className={styles.Button} onClick={this.handleClick}>
+      <button className={className} onClick={this.handleClick}>
         {children}
       </button>
     );

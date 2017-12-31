@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as classnames from 'classnames';
 
-import * as styles from './Card.scss';
+import * as styles from './Card.css';
 import Heading from '../Heading';
 
 /**

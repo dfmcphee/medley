@@ -2,11 +2,11 @@
   background-size: cover;
   background-position: center;
   padding: 4rem 1rem;
-  color: $color-white;
+  color: var(--color-white);
 }
 
 .Container {
-  max-width: $default-max-width;
+  max-width: var(--default-max-width);
   margin: 0 auto;
   display: flex;
 }

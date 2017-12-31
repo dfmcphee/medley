@@ -1,5 +1,5 @@
 import * as React from 'react';
-import * as styles from './TextField.scss';
+import * as styles from './TextField.css';
 
 export interface Props {
   label: string;

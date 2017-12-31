@@ -46,7 +46,7 @@ module.exports = {
     // require.resolve('webpack/hot/dev-server'),
     require.resolve('react-dev-utils/webpackHotDevClient'),
     // Finally, this is your app's code:
-    paths.appIndexJs,
+    paths.exampleIndexJs,
     // We include the app code last so that if there is a runtime error during
     // initialization, it doesn't blow up the WebpackDevServer client, and
     // changing JS code would still trigger a refresh.
@@ -122,13 +122,13 @@ module.exports = {
         test: /\.(ts|tsx)$/,
         loader: require.resolve('tslint-loader'),
         enforce: 'pre',
-        include: paths.appSrc,
+        include: [paths.appSrc, paths.exampleSrc],
       },
       {
         test: /\.js$/,
         loader: require.resolve('source-map-loader'),
         enforce: 'pre',
-        include: paths.appSrc,
+        include: [paths.appSrc, paths.exampleSrc],
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -149,7 +149,7 @@ module.exports = {
           // Compile .tsx?
           {
             test: /\.(ts|tsx)$/,
-            include: paths.appSrc,
+            include: [paths.appSrc, paths.exampleSrc],
             loader: require.resolve('ts-loader'),
           },
           // "postcss" loader applies autoprefixer to our CSS.
@@ -166,19 +166,7 @@ module.exports = {
                 options: {
                   modules: true,
                   namedExport: true,
-                },
-              },
-              {
-                loader: require.resolve('sass-loader'),
-                options: {
-                  modules: true,
                   localIdentName: "[name]__[local]___[hash:base64:5]"
-                },
-              },
-              {
-                loader: 'sass-resources-loader',
-                options: {
-                  resources: './src/styles/foundation.scss',
                 },
               },
               {
