@@ -1,8 +1,8 @@
 # React Design System
 
-[![Build Status](https://travis-ci.org/dfmcphee/react-design-system.svg?branch=master)](https://travis-ci.org/dfmcphee/react-design-system)
+React Design System is a collection of React components to help you easily build web interfaces.
 
-React Design System is a collection of React components to help you build web interfaces quicker and easier.
+[![Build Status](https://travis-ci.org/dfmcphee/react-design-system.svg?branch=master)](https://travis-ci.org/dfmcphee/react-design-system)
 
 ## Development
 
