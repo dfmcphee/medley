@@ -15,7 +15,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js && cp ./build/static/js/index.js ./index.js && cp ./build/static/css/index.css ./index.css",
     "test": "node scripts/test.js --env=jsdom",
-    "clean": "rm -rf build",
+    "clean": "rm -rf build index.js index.css",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "prepublishOnly": "npm run build",
