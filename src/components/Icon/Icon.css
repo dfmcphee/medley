@@ -1,0 +1,10 @@
+.Icon {
+  display: inline-flex;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-gray);
+}
+
+.Icon svg {
+  fill: currentColor;
+}

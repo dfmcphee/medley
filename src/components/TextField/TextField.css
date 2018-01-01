@@ -1,5 +1,50 @@
 .TextField {
+  position: relative;
   display: flex;
-  box-shadow: 0 0.4rem 1rem var(--default-shadow-color);
+  flex-direction: column;
+  width: 100%;
+  border-bottom:1px solid rgb(174, 174, 174);
+}
+
+.TextField:before,
+.TextField:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom: 0; 
+  position:absolute;
+  background: var(--color-primary); 
+  transition:0.2s ease all; 
+}
+
+.TextField:before {
+  left:50%;
+}
+
+.TextField:after {
+  right:50%; 
+}
+
+.focused:before,
+.focused:after {
+  width:50%;
+}
+
+.Input {
   border: 0;
+  font-size: 1.2rem;
+  height: 2.4rem;
+}
+
+.Input:focus {
+  outline: 0;
+}
+
+.Label {
+  font-size: 1.2rem;
+  color: var(--color-text-secondary);
+}
+
+.focused .Label {
+  color: var(--color-primary);
 }

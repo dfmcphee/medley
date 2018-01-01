@@ -5,6 +5,7 @@ import * as styles from './Button.css';
 
 export interface Props {
   primary?: boolean;
+  transparent?: boolean;
   onClick?(target: EventTarget): void;
 }
 
@@ -15,10 +16,11 @@ class Button extends React.Component<Props, {}> {
   }
 
   render() {
-    const {children, primary} = this.props;
+    const {children, primary, transparent} = this.props;
 
     const className = classnames(styles.Button, {
       [styles.primary]: primary,
+      [styles.transparent]: transparent,
     });
 
     return (
@@ -30,6 +32,10 @@ class Button extends React.Component<Props, {}> {
 
   private handleClick(event: React.MouseEvent<HTMLElement>) {
     const {onClick} = this.props;
+
+    const target = event.target as HTMLButtonElement;
+    target.blur();
+
     if (!onClick) { return; }
 
     onClick(event.target);

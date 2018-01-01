@@ -2,6 +2,7 @@
   display: block;
   max-width: var(--default-max-width);
   margin: 2rem auto;
+  padding: 2rem;
 }
 
 .Items {

@@ -23,3 +23,15 @@
 .primary:hover {
   opacity: 0.9;
 }
+
+.transparent {
+  color: var(--color-text-primary);
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.transparent:hover {
+  background-color: var(--color-gray-lighter);
+  box-shadow: none;
+  transform: translateY(0);
+}

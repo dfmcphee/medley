@@ -19,6 +19,11 @@ export {
 } from './Hero';
 
 export {
+  default as Icon,
+  Props as IconProps,
+} from './Icon';
+
+export {
   default as Layout,
   Props as LayoutProps,
 } from './Layout';

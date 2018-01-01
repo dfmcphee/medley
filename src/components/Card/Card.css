@@ -5,7 +5,6 @@
   background: rgba(255, 255, 255, 0.9);
   border-radius: var(--default-border-radius);
   font-family: var(--default-font-family);
-  color: var(--default-text-color);
 }
 
 .Header {
@@ -21,7 +20,7 @@
 }
 
 .Body > * + * {
-  margin-top: 0.8rem;
+  margin-top: 2rem;
 }
 
 .ImageWrapper {

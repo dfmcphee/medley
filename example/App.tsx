@@ -6,16 +6,31 @@ import {
   Hero,
   Layout,
   Nav,
+  TextField,
 } from '../src';
 
 const logo = require('./images/logo.svg');
 const image1 = require('./images/tabs.svg');
 const image2 = require('./images/images.svg');
 const image3 = require('./images/account.svg');
-const heroImage = require('./images/gradient.svg');
+const heroImage = require('./images/hero.svg');
 
-class App extends React.Component {
+interface State {
+  textValue: string;
+}
+
+class App extends React.Component<{}, State> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      textValue: '',
+    };
+
+    this.handleTextChange = this.handleTextChange.bind(this);
+  }
+
   render() {
+    const {textValue} = this.state;
     return (
       <div>
         <Nav
@@ -46,11 +61,16 @@ class App extends React.Component {
           <Card title="Nec no hinc" image={image3}>
             <p>Lorem ipsum dolor sit amet, ea suscipit consulatu sea, adipiscing suscipiantur eos ei.</p>
             <p>Usu soleat facete dissentias ne. Nec no hinc case, aperiri discere ea qui.</p>
+            <TextField id="test" type="email" label="Email" value={textValue} onChange={this.handleTextChange} />
             <Button>Check it out</Button>
           </Card>
         </Layout>
       </div>
     );
+  }
+
+  handleTextChange(event: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({textValue: event.target.value});
   }
 }
 

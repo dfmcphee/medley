@@ -13,11 +13,17 @@
 
 .Content {
   flex: 0 1 30rem;
+  margin: 1rem;
+}
+
+.Content * > * {
+  margin-top: 2rem;
 }
 
 .Title {
   font-size: 3rem;
   font-weight: 700;
+  margin-bottom: 1.6rem;
 }
 
 .Description {

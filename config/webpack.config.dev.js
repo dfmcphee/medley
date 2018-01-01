@@ -152,6 +152,20 @@ module.exports = {
             include: [paths.appSrc, paths.exampleSrc],
             loader: require.resolve('ts-loader'),
           },
+          {
+            test: /\.svg$/,
+            include: [paths.iconSrc],
+            loader: require.resolve('svg-inline-loader')
+          },
+          {
+            test: /\.(gif|png|jpe?g|svg)$/i,
+            use: [
+              'file-loader',
+              {
+                loader: require.resolve('image-webpack-loader'),
+              },
+            ],
+          },
           // "postcss" loader applies autoprefixer to our CSS.
           // "css" loader resolves paths in CSS and adds assets as dependencies.
           // "style" loader turns CSS into JS modules that inject <style> tags.
@@ -177,6 +191,7 @@ module.exports = {
                   ident: 'postcss',
                   plugins: () => [
                     require('postcss-flexbugs-fixes'),
+                    require('postcss-media-variables'),
                     autoprefixer({
                       browsers: [
                         '>1%',
