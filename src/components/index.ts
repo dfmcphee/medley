@@ -37,3 +37,9 @@ export {
   default as TextField,
   Props as TextFieldProps,
 } from './TextField';
+
+export {
+  default as Theme,
+  Props as ThemeProps,
+  Config as ThemeConfig,
+} from './Theme';

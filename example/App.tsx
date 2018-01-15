@@ -7,6 +7,8 @@ import {
   Layout,
   Nav,
   TextField,
+  Theme,
+  ThemeConfig,
 } from '../src';
 
 const logo = require('./images/logo.svg');
@@ -31,10 +33,26 @@ class App extends React.Component<{}, State> {
 
   render() {
     const {textValue} = this.state;
+
+    const customThemeConfig: ThemeConfig = {
+      colorSemantics: { 
+        primary: 'var(--color-blue)',
+        secondary: 'var(--color-blue)',
+      }
+    };
+
     return (
-      <div>
+      <Theme config={customThemeConfig}>
         <Nav
-          branding={<img src={logo} alt="React Design System Logo" style={{width: '10rem'}} />}
+          branding={
+            <a href="/">
+              <img
+                src={logo}
+                alt="React Design System Logo"
+                style={{ width: '10rem' }}
+              />
+            </a>
+          }
           items={[
             {url: '#', content: 'Hello'},
             {url: '#', content: 'About us'},
@@ -65,7 +83,7 @@ class App extends React.Component<{}, State> {
             <Button>Check it out</Button>
           </Card>
         </Layout>
-      </div>
+      </Theme>
     );
   }
 

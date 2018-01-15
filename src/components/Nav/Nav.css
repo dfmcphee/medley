@@ -20,7 +20,7 @@
   opacity: 0;
   visibility: hidden;
   transform: translateX(100%);
-  transition: all 200ms ease-in;
+  transition: all 200ms ease-in-out;
   background-color: var(--color-white);
   height: 100vh;
   top: 0;
@@ -34,18 +34,6 @@
   transform: translateX(0);
   opacity: 1;
   visibility: visible;
-}
-
-@media (min-width: var(--breakpoint-small)) {
-  .Menu {
-    position: static;
-    flex-direction: row;
-    width: auto;
-    transform: translateX(0);
-    background-color: transparent; 
-    box-shadow: none;
-    opacity: 1;
-  }
 }
 
 .Items {
@@ -83,7 +71,24 @@
   display: block;
 }
 
-@media (min-width: var(--breakpoint-small)) {
+
+@media (min-width: 50em) {
+  .Menu {
+    position: static;
+    visibility: visible;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    transform: translateX(0);
+    background-color: transparent; 
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  .Items {
+    flex-direction: row;
+  }
+
   .Toggle {
     display: none;
   }

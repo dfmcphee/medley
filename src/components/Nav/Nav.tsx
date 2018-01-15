@@ -45,15 +45,11 @@ class Nav extends React.Component<Props, State> {
       );
     });
 
-    const menuToggleMarkup = visible
-      ? null
-      : <Button onClick={this.handleMenuOpen} transparent>Menu</Button>;
-
     const closeToggleMarkup = visible
       ? (
           <div className={styles.CloseToggle}>
             <Button onClick={this.handleMenuClose} transparent>
-                                                                                                                                   <Icon src={closeIcon} />
+              <Icon src={closeIcon} />
             </Button>
           </div>
         )
@@ -65,7 +61,7 @@ class Nav extends React.Component<Props, State> {
           {branding}
         </div>
         <div className={styles.Toggle}>
-          {menuToggleMarkup}
+          <Button onClick={this.handleMenuOpen} transparent>Menu</Button>
         </div>
         <div className={menuClassName}>
           <ul className={styles.Items}>
