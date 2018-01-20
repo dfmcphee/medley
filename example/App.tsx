@@ -8,7 +8,6 @@ import {
   Nav,
   TextField,
   Theme,
-  ThemeConfig,
 } from '../src';
 
 const logo = require('./images/logo.svg');
@@ -34,15 +33,8 @@ class App extends React.Component<{}, State> {
   render() {
     const {textValue} = this.state;
 
-    const customThemeConfig: ThemeConfig = {
-      colorSemantics: { 
-        primary: 'var(--color-blue)',
-        secondary: 'var(--color-blue)',
-      }
-    };
-
     return (
-      <Theme config={customThemeConfig}>
+      <Theme>
         <Nav
           branding={
             <a href="/">

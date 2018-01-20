@@ -1,36 +1,10 @@
 .Theme {
-  --color-dark-blue: #1D1F7A;
-  --color-blue: #3336DB;
-  --color-blue-light: #0092F2;
-  --color-dark-green: #00A562;
-  --color-green: #00B936;
-  --color-red: #FF4052;
-  --color-yellow: #F2CC0C;
-  --color-white: #FFFFFF;
-  --color-gray-lighter: rgb(247, 248, 245);
-  --color-gray-light: #BDBDBD;
-  --color-gray: #757575;
-  --color-gray-dark: #404040;
-  --color-black: #1A1A1A;
-  --color-text-primary: var(--color-black);
-  --color-text-secondary: var(--color-gray-dark);
-  --color-background: var(--color-gray-lighter);
-  --color-primary: var(--color-blue);
-  --color-secondary: var(--color-dark-green);
-  --color-negative: var(--color-red);
-  --color-success: var(--color-green);
-  --color-warning: var(--color-yellow);
-  --color-info: var(--color-blue-light);
-  --color-shadow: rgba(0, 0, 0, 0.15);
-
   --default-max-width: 90rem;
 
   --default-font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, “Fira Sans”, “Droid Sans”, “Helvetica Neue”, Arial, sans-serif;
 
   --default-border-width: 1px;
   --default-border-radius: 0.4rem;
-
-  --breakpoint-small: 50em;
 
   font-family: var(--default-font-family);
 }

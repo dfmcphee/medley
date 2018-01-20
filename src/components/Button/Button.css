@@ -1,7 +1,7 @@
 .Button {
   display: inline-flex;
   color: var(--color-primary);
-  background-color: var(--color-white);
+  background-color: transparent;
   box-shadow: 0.1rem 0.1rem 0.2rem 0.1rem var(--color-shadow);
   border: 0;
   border-radius: var(--default-border-radius);
@@ -18,7 +18,7 @@
 
 .primary {
   background-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-invertedText);
 }
 
 .primary:hover {

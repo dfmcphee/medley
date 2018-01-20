@@ -2,7 +2,7 @@
   background-size: cover;
   background-position: center;
   padding: 4rem 1rem;
-  color: var(--color-white);
+  color: var(--color-invertedText);
 }
 
 .Container {
